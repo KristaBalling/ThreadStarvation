@@ -40,7 +40,7 @@ public class Main {
         public void run() {
             for(int i=0; i<100; i++) {
                 synchronized (lock) {
-                    System.out.println(threadColor + "%s: runCount = %d\n", Thread.currentThread().getName(), runCount++);
+                    System.out.format(threadColor + "%s: runCount = %d\n", Thread.currentThread().getName(), runCount++);
                     //execute critical section of code
                 }
             }
